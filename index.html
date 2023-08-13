@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logox.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js" integrity="sha512-Wft1v8e5sfJmolWfOyea3DBsf2qHZv6uBKLkvEYNSUo0wImWa9DYZH1lHU5y/UIfQu4xJ3xahqv1X4pvx3cv/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/0090da4799.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kavin Bharathi</title>
+</head>
+<body>
+    <div class="app">
+        <!--------------------------------------------- navbar --------------------------------------------->
+        <div id="navbar">
+            <img src="./assets//loxo.png" alt="" id="logo">
+            <div class="nav-links">
+                <a href="https://github.com/kavinbharathii" target="_blank" class="nav-link">github</a>
+                <a href="https://twitter.com/kavin_bharathii" target="_blank" class="nav-link">twitter</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+        </div>
+
+        <!-------------------------------------------- home page -------------------------------------------->
+        <section id="home">
+            <div class="image-wrapper">
+                <div class="image-box">
+                    <div id="backdrop">Hi.</div>
+                    <img src="./assets/kavindpbw.jpg" alt="" id="kavin">
+                    <img src="./assets/frame.png" alt="" id="frame">
+                </div>
+            </div>
+            <div class="text-container rellax" data-rellax-speed="7">
+                <div class="name-container">
+                    <p id="disp_name"></p>
+                    <p id="underscore" class="bgclass">_</p>
+                </div>
+                <div id="fullstack">&nbsp;</div>
+            </div>
+        </section>
+
+        <!-------------------------------------------- about page -------------------------------------------->
+        <section id="about" class="rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+            <section id="view">
+                <div class="content">
+                    Creative de&#8766;igner && deve10per.
+                </div>
+            </section>
+            <section id="overlay">
+                <canvas class="bg"></canvas>
+                <div class="content">
+                    Creative de&#8766;igner && deve10per.
+                </div>
+            </section>
+        </section>
+
+        <!-------------------------------------------- works page -------------------------------------------->
+        <section id="works" class="rellax" data-rellax-speed="4" data-rellax-percentage="0.5">
+
+            <div class="work">
+                <div class="desc">A minimal FAQ webapp for coders made w/ Django</div>
+                <div class="ast">&#128948;</div>
+                <div class="title">paradime</div>
+            </div>
+            <div class="work">
+                <div class="desc">A project management/boilerplate tool in Rust.</div>
+                <div class="ast">&#128948;</div>
+                <div class="title">ciph</div>
+            </div>
+            <div class="work">
+                <div class="desc">Lightweight directree CLI w/ python</div>
+                <div class="ast">&#128948;</div>
+                <div class="title">nerdtree</div>
+            </div>
+            <div class="work">
+                <div class="desc">A visualization of "wave function collapse" algorithm</div>
+                <div class="ast">&#128948;</div>
+                <div class="title">wave-function-collapse</div>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------- contact page -------------------------------------------->
+        <section id="contact">
+            <div class="contact-me">
+                Contact Me!
+                <div class="msg">Let's make something awesome</div>
+            </div>
+        
+            <form action="POST" class="contact-form">
+                <input type="text" name="name" required autocomplete="off">
+                <input type="email" name="email" required autocomplete="off"/>
+                <textarea name="message" cols="40" rows="5" placeholder="Hit me up!"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <!-------------------------------------------- page footer -------------------------------------------->
+        <footer>
+            <div id="credits">
+                A creation of Kavin Bharathi 💫
+                <div id="socials">
+                    <a href="https://instagram.com/kavin_bharathii"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/kavin_bharathii"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    <!------------------------------------------------- scripts ------------------------------------------------>
+    
+    <script src="app.js"></script>
+    <script>
+        let rellax = new Rellax('.rellax')
+    </script>
+
+</body>
+</html>
+
